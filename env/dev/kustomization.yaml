@@ -6,4 +6,4 @@ resources:
 
 images:
 - name: ghcr.io/shah010183/demo-app
-  newTag: latest
+  newTag: ae9861956b24fdaaa4855705f1f4aa51c8ed69c6
