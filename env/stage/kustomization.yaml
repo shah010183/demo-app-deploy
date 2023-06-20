@@ -5,4 +5,4 @@ resources:
 - ../../base
 images:
 - name: ghcr.io/shah010183/demo-app
-  newTag: e83e18f43f3adc4cdc29716543049c1ecfac034f
+  newTag: 447d736676f12fed79be7c956dea86a5aa03b0fc
