@@ -29,3 +29,20 @@ spec:
         name: demo-app
         ports:
         - containerPort: 8080
+---
+apiVersion: external-secrets.io/v1beta1
+kind: ExternalSecret
+metadata:
+  name: my-secret
+spec:
+  data:
+  - remoteRef:
+      key: /value2
+      version: v1
+    secretKey: secret-key
+  refreshInterval: 1h
+  secretStoreRef:
+    kind: ClusterSecretStore
+    name: vault
+  target:
+    name: my-secret
